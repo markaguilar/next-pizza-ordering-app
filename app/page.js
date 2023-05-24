@@ -1,4 +1,5 @@
 import Image from "next/image";
+import PizzaCard from "@components/PizzaCard";
 
 export default function Home() {
   return (
@@ -116,7 +117,7 @@ export default function Home() {
           </p>
           <div className="max-w-6xl mx-auto grid grid-cols-3 gap-10 text-center mt-20">
             <div>
-              <div className="flex items-center justify-center mb-12">
+              <div className="flex items-center justify-center mb-6">
                 <div className="flex justify-center items-center mb-5 border border-[#5c3d03] w-[100px] h-[100px] rounded-md transition ease-in-out duration-200 hover:rotate-45 hover:bg-[#f8b500] hover:border-none">
                   <span className="flaticon-diet text-[60px] text-primary-brown opacity-100 z-10 hover:text-white"></span>
                 </div>
@@ -128,7 +129,7 @@ export default function Home() {
               </p>
             </div>
             <div>
-              <div className="flex items-center justify-center mb-12">
+              <div className="flex items-center justify-center mb-6">
                 <div className="flex justify-center items-center mb-5 border border-[#5c3d03] w-[100px] h-[100px] rounded-md transition ease-in-out duration-200 hover:rotate-45 hover:bg-[#f8b500] hover:border-none">
                   <span className="flaticon-bicycle text-[60px] text-primary-brown opacity-100 z-10 hover:text-white"></span>
                 </div>
@@ -140,7 +141,7 @@ export default function Home() {
               </p>
             </div>
             <div>
-              <div className="flex items-center justify-center mb-12">
+              <div className="flex items-center justify-center mb-6">
                 <div className="flex justify-center items-center mb-5 border border-[#5c3d03] w-[100px] h-[100px] rounded-md transition ease-in-out duration-200 hover:rotate-45 hover:bg-[#f8b500] hover:border-none">
                   <span className="flaticon-pizza-1 text-[60px] text-primary-brown opacity-100 z-10 hover:text-white"></span>
                 </div>
@@ -155,12 +156,15 @@ export default function Home() {
         </div>
       </section>
       <section className="py-[105px]">
-        <div className="text-white text-center mb-12">
+        <div className="text-white text-center mb-20">
           <h3 className=" text-3xl uppercase mb-6">hot pizza meals</h3>
           <p className="text-primary-gray leading-7 max-w-2xl mx-auto mb-4">
             Far far away, behind the word mountains, far from the countries
             Vokalia and Consonantia, there live the blind texts.
           </p>
+        </div>
+        <div className="grid grid-cols-3">
+          <PizzaCard pizzaImage="/images/pizza-1.jpg" pizzaName="" />
         </div>
       </section>
     </main>
