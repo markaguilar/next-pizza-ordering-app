@@ -30,9 +30,9 @@ const Nav = () => {
   ];
 
   return (
-    <div className="p-1 bg-black01">
+    <div className="p-1 bg-black01 font-poppins">
       <div className="w-full max-w-6xl mx-auto px-2 flex items-center justify-between">
-        <Link href="/" className="text-xl leading-none text-white">
+        <Link href="/" className="text-xl leading-none text-white font-josefin">
           <span className="flaticon-pizza-1 mr-1 text-primary-yellow"></span>
           Pizza
           <br />

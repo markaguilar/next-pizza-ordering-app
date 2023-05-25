@@ -1,10 +1,29 @@
 import "./globals.css";
 import "@/styles/flaticon.css";
 import "@/styles/icomoon.css";
-import { Inter } from "next/font/google";
+import { Poppins, Josefin_Sans, Nothing_You_Could_Do } from "next/font/google";
 import Nav from "@components/Nav";
 
-const inter = Inter({ subsets: ["latin"] });
+const poppins = Poppins({
+  subsets: ["latin"],
+  display: "swap",
+  weight: ["400", "500", "600", "700"],
+  variable: "--font-poppins",
+});
+
+const josefinSans = Josefin_Sans({
+  subsets: ["latin"],
+  display: "swap",
+  weight: ["400"],
+  variable: "--font-josefin-sans",
+});
+
+const nothingYouCouldDo = Nothing_You_Could_Do({
+  subsets: ["latin"],
+  display: "swap",
+  weight: ["400"],
+  variable: "--font-nothing-you-could-do",
+});
 
 export const metadata = {
   title: "Create Next App",
@@ -14,7 +33,9 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body
+        className={`${poppins.variable} ${josefinSans.variable} ${nothingYouCouldDo.variable} font-poppins`}
+      >
         <Nav />
         {children}
       </body>

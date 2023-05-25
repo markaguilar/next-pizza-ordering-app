@@ -16,6 +16,12 @@ module.exports = {
         "primary-brown": "#5c3d03",
         "primary-gray": "#808080",
       },
+      fontFamily: {
+        sans: ["var(--font-inter)"],
+        poppins: ["var(--font-poppins)"],
+        josefin: ["var(--font-josefin-sans)"],
+        nothing: ["var(--font-nothing-you-could-do)"],
+      },
     },
   },
   plugins: [],
